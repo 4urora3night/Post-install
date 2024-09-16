@@ -29,13 +29,13 @@ echo
 echo -e "To continue the post-install, "$RED"Dialog"$ENDCOLOR" is needed to provide a TUI."
 sleep 2
 read -p "$(echo -e "Install "$RED"ML4W"$ENDCOLOR" using AUR(1) or GIT(2)?"$FAINT"(1/2/n)"$ENDCOLOR)" choice
-if [ "$choice" = "2" ]; then
+if [ "$choice" = "1" ]; then
 echo -e "Installing "$RED"ML4W"$ENDCOLOR"using"$GREEN"AUR"$ENDCOLOR
     yay -Syu 
     yay -S ml4w-hyprland-git
 fi
 if [ "$choice" = "2" ]; then
-echo -e "Installing "$RED"ML4W"$ENDCOLOR"using"$GREEN"AUR"$ENDCOLOR
+echo -e "Installing "$RED"ML4W "$ENDCOLOR"using "$GREEN"Git"$ENDCOLOR"."
     yay -SYu
     git clone https://github.com/mylinuxforwork/dotfiles.git
     cd dotfiles/bin
