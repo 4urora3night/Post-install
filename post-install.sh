@@ -37,7 +37,7 @@ if [ ! -d /bin/yay ] ; then
         cd ~/repo
         echo "Installing gum"
         yay -Syyu
-        yay gum
+        yay -S gum
     fi
 else 
     echo -e $BLUE"yay"$ENDCOLOR" already exists."
