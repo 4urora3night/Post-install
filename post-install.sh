@@ -49,6 +49,7 @@ fi
 CHOICE=$(gum choose Chromebook\ presets ML4W --header "What installation do you want to proceed with?" --selected.foreground="#fff" --selected.background="#89b4fa" --cursor.foreground="#fff")  
 
 if [ "$CHOICE" = "Chromebook presets" ]; then 
+    yay -S python3 --needed
     cd ~/repo
     git clone https://github.com/WeirdTreeThing/chromebook-linux-audio.git
     cd chromebook-linux-audio
