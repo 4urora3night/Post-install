@@ -1,3 +1,4 @@
 # Post-install
-
-`bash <(crul -s https://raw.githubusercontent.com/4urora3night/Post-install/refs/heads/main/post-install.sh)`
+A simple Arch Linux post intsall script to automate installing `yay` and `ML4W`.
+To install just run in the terminal or TTY 
+```bash <(curl -s https://raw.githubusercontent.com/4urora3night/Post-install/refs/heads/main/post-install.sh)```
